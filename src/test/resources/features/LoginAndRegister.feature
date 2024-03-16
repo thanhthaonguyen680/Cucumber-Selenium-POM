@@ -1,15 +1,13 @@
-Feature: Register and Login BankGuru
+Feature: As a user, I want to create credentials
+  Scenario: Successful register account
+#    Given Go to the Home Page
+    When Click on the Register Page
+    And Input the First name and Last Name
+    And Input valid Email
+    And Input the Password and Confirm Password
+    And Click to the Register Button
+    Then Verify Register Page
 
-  As a user of the Bankguru website
-  I want to be able to register and log in with my account
-  So that I can access my account-related features and manage my website
-  @register_and_login
-  Scenario: Register to login system
-    # open URL -> hooks
-    Given Open Register page
-    When Input to Email
-    And Click to Submit button
-    Then Get User and Password Information
-    When Back to Login page
-    When Submit valid infor to Login form
-    Then Verify Homepage display
+
+
+
